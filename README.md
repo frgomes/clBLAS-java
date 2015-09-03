@@ -17,7 +17,7 @@ Code has been tested on Linux Mint 17 with Devastator and AMD A8-4500M APU with 
 
 This is Java 8 project. No other java dependencies are needed.
 
-While immature, project releases and snapshots are available in a maven repository which is located on releases and snapshots branches.
+While immature, project releases and snapshots are available in a maven repository which is located on corresponding branches.
 
 
 
@@ -39,7 +39,7 @@ To use it in your maven project, setup repositories directly in pom.xml:
 </repositories>
 ```
 
-Then you can add dependency to your project:
+Then you can add a dependency to your project:
 
 ```xml
 <dependency>
@@ -63,8 +63,21 @@ Or, for the latest release:
 
 clBLAS is documented [here](http://clmathlibraries.github.io/clBLAS).
 
-On Java side, only small subset of BLAS Level 1,2,3 is implemented. However, adding more functionality should be straightforward.
+On Java side, only a small subset of BLAS Level 1,2,3 is implemented. However, adding more functionality should be straightforward.
 
 Code base is relatively small, so please read the source at the moment. Also, tests might be helpfull.
 
 ## Pull requests are highly welcome!
+
+Just fork or clone it:
+
+```sh
+git clone https://github.com/sidec/clBLAS-java.git
+```
+
+Add new feature or fix bugs, test it, and install locally with 
+
+```sh
+mvn clean compile install
+```
+
