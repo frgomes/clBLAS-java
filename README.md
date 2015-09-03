@@ -9,15 +9,15 @@ Java native interface (JNI) wrapper for OpenCL BLAS implementation optimized for
 This library bridges clMathLibraries/clBLAS and java through jni calls.
 Original C code is published in [clMathLibraries repository](https://github.com/clMathLibraries/clBLAS).
 
-clBLAS-java ships with a shared library for x86_64 Linux, which is automatically loaded to jvm at a runtime, but you should have installed ICD loader in your system to make it work.
+clBLAS-java ships with a shared library for x86_64 Linux, which is automatically loaded to jvm at a runtime, but you should have ICD loader installed in your system to make it work.
 Code has been tested on Linux Mint 17 with Devastator and AMD A8-4500M APU with Radeon(tm) HD Graphics and using AMD proprietary driver but, in theory, it should also work on any hardware with OpenCl driver.
 
 
 ### Setup
 
-This is Java 8 project. No other java dependencies are needed.
+This is Java 8 project. No other java dependencies are required.
 
-While immature, project releases and snapshots are available in a maven repository which is located on corresponding branches.
+While immature, project releases and snapshots are available in a maven repository, which is located on corresponding branches.
 
 
 
@@ -69,15 +69,16 @@ Code base is relatively small, so please read the source at the moment. Also, te
 
 ## Pull requests are highly welcome!
 
-Just fork or clone it:
+Fork or clone it:
 
 ```sh
 git clone https://github.com/sidec/clBLAS-java.git
 ```
 
-Add new feature or fix bugs, test it, and install locally with 
+Add new feature or fix bugs, test it, install locally with 
 
 ```sh
 mvn clean compile install
 ```
 
+and pull a request.
