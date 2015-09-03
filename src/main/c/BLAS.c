@@ -118,6 +118,8 @@ JNIEXPORT jint JNICALL Java_org_bitbucket_ioplus_clblas_BLAS_setup(
 }
 
 
+
+
 /** ***********************************************************************
  *
  *

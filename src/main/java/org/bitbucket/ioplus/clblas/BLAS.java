@@ -40,6 +40,11 @@ public class BLAS {
         });
     }
 
+    private static native int setOpenClExecutionMode(int mode);
+    private static int setOpenClExecutionMode(OpenClExecutionMode mode){
+        return setOpenClExecutionMode(mode.ordinal());
+    }
+
     private BLAS(){}
 
     /** ***********************************************************************
