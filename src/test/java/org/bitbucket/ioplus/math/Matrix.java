@@ -1,11 +1,6 @@
 package org.bitbucket.ioplus.math;
 
-/**
- * Utility class for tests. Matrix with float32 data type array. <br></br>
- * Matrix is implemented as immutable POJO, so operations are quite expensive on a host side.<br></br>
- *
- *
- */
+
 public class Matrix {
     /**
      * Read-only field.

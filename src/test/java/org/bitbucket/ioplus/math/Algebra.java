@@ -10,7 +10,10 @@ import java.util.Random;
 import  static org.bitbucket.ioplus.clblas.Level3.*;
 
 /**
- * Created by przemek on 13/08/15.
+ * Utility class for tests. Matrix with float32 data type array. <br></br>
+ * Matrix is implemented as immutable POJO, so operations are quite expensive on a host side.<br></br>
+ *
+ *
  */
 public class Algebra {
 

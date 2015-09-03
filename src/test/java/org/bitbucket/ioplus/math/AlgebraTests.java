@@ -28,11 +28,6 @@ public class AlgebraTests {
         Asmall = new Matrix(aSmallData,10,5);
     }
 
-    @Test
-    public void lapackeTest() throws ClassNotFoundException {
-        Class.forName("org.bitbucket.ioplus.openblas.Lapacke");
-    }
-
 
 
     @Test
