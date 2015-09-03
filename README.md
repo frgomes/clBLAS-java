@@ -1,2 +1,70 @@
 # clBLAS-java
 Java native interface (JNI) wrapper of OpenCL BLAS implementation optimized for AMD hardware (GPU, APU &amp; CPU fallback).
+
+
+
+
+### Requirements
+
+This library bridges clMathLibraries/clBLAS and java through jni calls.
+Original C code is published in [clMathLibraries repository](https://github.com/clMathLibraries/clBLAS).
+
+clBLAS-java ships with a shared library for x86_64 Linux, which is automatically loaded to jvm at runtime, but you should have installed ICD loader in your system to make it work.
+Code has been tested on Linux Mint 17 with 'Devastator' and 'AMD A8-4500M APU with Radeon(tm) HD Graphics' and using AMD(tm) proprietary driver but in theory it should also work on hardware from INTEL(tm) or NVIDIA(tm) with OpenCl driver.
+
+
+### Setup
+
+This is Java(tm) 8 project. No other java dependencies are needed.
+
+While immature, the project releases and snapshots are available in a maven repository which is located on releases and snapshots branches.
+
+
+
+To use it in your maven project, add setup repositories directly in pom.xml:
+
+
+```xml
+<repositories>
+        <repository>
+                <id>clBLAS-java</id>
+                <name>clBLAS-java releases</name>
+                <url>https://raw.github.com/sidec/clBLAS-java/releases</url>
+        </repository>
+        <repository>
+                <id>clBLAS-java</id>
+                <name>clBLAS-java snapshots</name>
+                <url>https://raw.github.com/sidec/clBLAS-java/snapshots</url>
+        </repository>
+</repositories>
+```
+
+Then you can add dependency to your project:
+
+```xml
+<dependency>
+          <groupId>org.bitbucket.ioplus</groupId>
+          <artifactId>clBLAS-java</artifactId>
+          <version>0.0.2-SNAPSHOT</version>
+</dependency>
+```
+
+Or, for the latest release:
+
+```xml
+<dependency>
+          <groupId>org.bitbucket.ioplus</groupId>
+          <artifactId>clBLAS-java</artifactId>
+          <version>0.0.1</version>
+</dependency>
+```
+
+### Documentation
+
+clBLAS is documented [here](http://clmathlibraries.github.io/clBLAS).
+
+On Java side, only small subset of BLAS Level 1,2,3 is implemented. However, adding more functionality should be straightforward.
+
+Code base is relatively small, so please read the source at the moment. Also, tests might be helpfull.
+
+## Pull requests are highly welcome!
