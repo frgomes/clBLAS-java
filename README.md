@@ -17,7 +17,7 @@ Code has been tested on Linux Mint 17 with Devastator and AMD A8-4500M APU with 
 
 This is Java(tm) 8 project. No other java dependencies are needed.
 
-While immature, the project releases and snapshots are available in a maven repository which is located on releases and snapshots branches.
+While immature, project releases and snapshots are available in a maven repository which is located on releases and snapshots branches.
 
 
 
