@@ -21,7 +21,7 @@ While immature, project releases and snapshots are available in a maven reposito
 
 
 
-To use it in your maven project, add setup repositories directly in pom.xml:
+To use it in your maven project, setup repositories directly in pom.xml:
 
 
 ```xml
