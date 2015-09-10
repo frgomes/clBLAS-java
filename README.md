@@ -75,10 +75,10 @@ Fork or clone it:
 git clone https://github.com/sidec/clBLAS-java.git
 ```
 
-Add new feature or fix bugs, test it, install locally with 
+Add new feature or fix bugs, test it, 
 
 ```sh
-mvn clean compile install
+mvn clean test
 ```
 
 and pull a request.
